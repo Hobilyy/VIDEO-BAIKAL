@@ -10,44 +10,44 @@ export default class level3 extends Phaser.Scene {
     }
 
     preload() {
-    this.load.image('background3', 'BG_lv3_2.png');
+    this.load.image('background3', './BG_lv3_2.png');
 
-    this.load.spritesheet('heart', 'heart_hurt.png', { frameWidth: 16, frameHeight: 16 });
-    this.load.image('pause_normal', 'PauseNormal.png');
-    this.load.image('pause_hover', 'PauseHover.png');
-    this.load.image('pause_focus', 'PauseFocus.png');
+    this.load.spritesheet('heart', './heart_hurt.png', { frameWidth: 16, frameHeight: 16 });
+    this.load.image('pause_normal', './PauseNormal.png');
+    this.load.image('pause_hover', './PauseHover.png');
+    this.load.image('pause_focus', './PauseFocus.png');
 
-    this.load.image('restart_normal', 'ReplayNormal.png');
-    this.load.image('restart_hover', 'ReplayHover.png');
-    this.load.image('restart_focus', 'ReplayFocus.png');
+    this.load.image('restart_normal', './ReplayNormal.png');
+    this.load.image('restart_hover', './ReplayHover.png');
+    this.load.image('restart_focus', './ReplayFocus.png');
 
-    this.load.image('menu_normal', 'MenuNormal.png');
-    this.load.image('menu_hover', 'MenuHover.png');
-    this.load.image('menu_focus', 'MenuFocus.png');
+    this.load.image('menu_normal', './MenuNormal.png');
+    this.load.image('menu_hover', './MenuHover.png');
+    this.load.image('menu_focus', './MenuFocus.png');
 
-    this.load.image('exit_normal', 'LeaveNormal.png');
-    this.load.image('exit_hover', 'LeaveHover.png');
-    this.load.image('exit_focus', 'LeaveFocus.png');
+    this.load.image('exit_normal', './LeaveNormal.png');
+    this.load.image('exit_hover', './LeaveHover.png');
+    this.load.image('exit_focus', './LeaveFocus.png');
 
     // Plataformas
-    this.load.image('lv3_p1', 'lv3_p1.png');
-    this.load.image('lv3_p2', 'lv3_p2.png');
-    this.load.image('lv3_p3', 'lv3_p3.png');
-    this.load.image('lv3_p4', 'lv3_p4.png');
-    this.load.image('lv3_p5', 'lv3_p5.png');
-    this.load.image('lv3_p6', 'lv3_p6.png');
-    this.load.image('lv3_p7', 'lv3_p7.png');
-    this.load.image('lv3_p8', 'lv3_p8.png');
-    this.load.image('lv3_p9', 'lv3_p9.png');
-    this.load.image('lv3_p10', 'lv3_p10.png');
-    this.load.image('lv3_p11', 'lv3_p11.png');
-    this.load.image('lv3_p12', 'lv3_p12.png');
-    this.load.image('lv3_p13', 'lv3_p13.png');
-    this.load.image('lv3_p14', 'lv3_p14.png');
-    this.load.image('lv3_p15', 'lv3_p15.png');
+    this.load.image('lv3_p1', './lv3_p1.png');
+    this.load.image('lv3_p2', './lv3_p2.png');
+    this.load.image('lv3_p3', './lv3_p3.png');
+    this.load.image('lv3_p4', './lv3_p4.png');
+    this.load.image('lv3_p5', './lv3_p5.png');
+    this.load.image('lv3_p6', './lv3_p6.png');
+    this.load.image('lv3_p7', './lv3_p7.png');
+    this.load.image('lv3_p8', './lv3_p8.png');
+    this.load.image('lv3_p9', './lv3_p9.png');
+    this.load.image('lv3_p10', './lv3_p10.png');
+    this.load.image('lv3_p11', './lv3_p11.png');
+    this.load.image('lv3_p12', './lv3_p12.png');
+    this.load.image('lv3_p13', './lv3_p13.png');
+    this.load.image('lv3_p14', './lv3_p14.png');
+    this.load.image('lv3_p15', './lv3_p15.png');
     // this.load.image('lv3_p16', 'lv3_p16.png'); 
 
-    this.load.image('exit3', 'Portal Lv3.png');
+    this.load.image('exit3', './Portal Lv3.png');
 }
     
     create() {
