@@ -10,63 +10,63 @@ export default class level2 extends Phaser.Scene {
     }
 
     preload() {
-        this.load.image('background2', 'BG_lv2.png');
+    this.load.image('background2', 'BG_lv2.png');
 
-        this.load.spritesheet('heart', '/Assets/ui/heart_hurt.png', { frameWidth: 16, frameHeight: 16 });
-        this.load.image('pause_normal', '/Assets/ui/pause_button/PauseNormal.png');
-        this.load.image('pause_hover', '/Assets/ui/pause_button/PauseHover.png');
-        this.load.image('pause_focus', '/Assets/ui/pause_button/PauseFocus.png');
-    
-        this.load.image('restart_normal', '/Assets/ui/replay_button/ReplayNormal.png');
-        this.load.image('restart_hover', '/Assets/ui/replay_button/ReplayHover.png');
-        this.load.image('restart_focus', '/Assets/ui/replay_button/ReplayFocus.png');
-    
-        this.load.image('menu_normal', '/Assets/ui/menu_button/MenuNormal.png');
-        this.load.image('menu_hover', '/Assets/ui/menu_button/MenuHover.png');
-        this.load.image('menu_focus', '/Assets/ui/menu_button/MenuFocus.png');
-    
-        this.load.image('exit_normal', '/Assets/ui/salir_button/LeaveNormal.png');
-        this.load.image('exit_hover', '/Assets/ui/salir_button/LeaveHover.png');
-        this.load.image('exit_focus', '/Assets/ui/salir_button/LeaveFocus.png');
+    this.load.spritesheet('heart', 'heart_hurt.png', { frameWidth: 16, frameHeight: 16 });
+    this.load.image('pause_normal', 'PauseNormal.png');
+    this.load.image('pause_hover', 'PauseHover.png');
+    this.load.image('pause_focus', 'PauseFocus.png');
 
-        //Plataformas
-        this.load.image('lv2_p1', '/Assets/backgrounds/Lv 2/Plataformas/lv2_p1.png');
-        this.load.image('lv2_p2', '/Assets/backgrounds/Lv 2/Plataformas/lv2_p2.png');
-        this.load.image('lv2_p3', '/Assets/backgrounds/Lv 2/Plataformas/lv2_p3.png');
-        this.load.image('lv2_pl1', '/Assets/backgrounds/Lv 2/Plataformas/lv2_pl1.png');
-        this.load.image('lv2_p4', '/Assets/backgrounds/Lv 2/Plataformas/lv2_p4.png');
-        this.load.image('lv2_p5', '/Assets/backgrounds/Lv 2/Plataformas/lv2_p5.png');
-        this.load.image('lv2_pl2', '/Assets/backgrounds/Lv 2/Plataformas/lv2_pl2.png');
-        this.load.image('lv2_p6', '/Assets/backgrounds/Lv 2/Plataformas/lv2_p6.png');
-        this.load.image('lv2_p7', '/Assets/backgrounds/Lv 2/Plataformas/lv2_p7.png');
-        this.load.image('lv2_p8', '/Assets/backgrounds/Lv 2/Plataformas/lv2_p8.png');
-        this.load.image('lv2_p9', '/Assets/backgrounds/Lv 2/Plataformas/lv2_p9.png');
-        this.load.image('lv2_p10', '/Assets/backgrounds/Lv 2/Plataformas/lv2_p10.png');
-        this.load.image('lv2_p11', '/Assets/backgrounds/Lv 2/Plataformas/lv2_p11.png');
-        this.load.image('lv2_p12', '/Assets/backgrounds/Lv 2/Plataformas/lv2_p12.png');
-        this.load.image('lv2_p13', '/Assets/backgrounds/Lv 2/Plataformas/lv2_p13.png');
-        this.load.image('lv2_p14', '/Assets/backgrounds/Lv 2/Plataformas/lv2_p14.png');
-        this.load.image('lv2_p15', '/Assets/backgrounds/Lv 2/Plataformas/lv2_p15.png');
-        this.load.image('lv2_p16', '/Assets/backgrounds/Lv 2/Plataformas/lv2_p16.png');
-        this.load.image('lv2_p17', '/Assets/backgrounds/Lv 2/Plataformas/lv2_p17.png');
-        this.load.image('lv2_p18', '/Assets/backgrounds/Lv 2/Plataformas/lv2_p18.png');
-        this.load.image('lv2_p19', '/Assets/backgrounds/Lv 2/Plataformas/lv2_p19.png');
-        this.load.image('lv2_p20', '/Assets/backgrounds/Lv 2/Plataformas/lv2_p20.png');
-        this.load.image('lv2_p21', '/Assets/backgrounds/Lv 2/Plataformas/lv2_p21.png');
-        this.load.image('lv2_p22', '/Assets/backgrounds/Lv 2/Plataformas/lv2_p22.png');
-        this.load.image('lv2_p23', '/Assets/backgrounds/Lv 2/Plataformas/lv2_p23.png');
-        this.load.image('lv2_p24', '/Assets/backgrounds/Lv 2/Plataformas/lv2_p24.png');
+    this.load.image('restart_normal', 'ReplayNormal.png');
+    this.load.image('restart_hover', 'ReplayHover.png');
+    this.load.image('restart_focus', 'ReplayFocus.png');
 
-        // Cargar el sprite del científico
-        this.load.spritesheet('cientifico_right', '/Assets/sprites/Skin_Cientific/RightCientific.png', { frameWidth: 192, frameHeight: 192 });
-        this.load.spritesheet('cientifico_left', '/Assets/sprites/Skin_Cientific/LeftCientific.png', { frameWidth: 192, frameHeight: 192 });
-        this.load.spritesheet('cientifico_attack', '/Assets/sprites/Skin_Cientific/Attack_Left.png', { frameWidth: 192, frameHeight: 192 });
-        this.load.spritesheet('cientifico_death', '/Assets/sprites/Skin_Cientific/Cientific_Die.png', { frameWidth: 192, frameHeight: 192 });
-        this.load.spritesheet('cientifico_bullet_sprite', '/Assets/sprites/Skin_Cientific/Jeringa.png', { frameWidth: 192, frameHeight: 192 });
+    this.load.image('menu_normal', 'MenuNormal.png');
+    this.load.image('menu_hover', 'MenuHover.png');
+    this.load.image('menu_focus', 'MenuFocus.png');
 
-        this.load.image('exit2', '/Assets/backgrounds/Lv 2/Portal/Portal Lv2.png');
+    this.load.image('exit_normal', 'LeaveNormal.png');
+    this.load.image('exit_hover', 'LeaveHover.png');
+    this.load.image('exit_focus', 'LeaveFocus.png');
 
-    }
+    // Plataformas
+    this.load.image('lv2_p1', 'lv2_p1.png');
+    this.load.image('lv2_p2', 'lv2_p2.png');
+    this.load.image('lv2_p3', 'lv2_p3.png');
+    this.load.image('lv2_pl1', 'lv2_pl1.png');
+    this.load.image('lv2_p4', 'lv2_p4.png');
+    this.load.image('lv2_p5', 'lv2_p5.png');
+    this.load.image('lv2_pl2', 'lv2_pl2.png');
+    this.load.image('lv2_p6', 'lv2_p6.png');
+    this.load.image('lv2_p7', 'lv2_p7.png');
+    this.load.image('lv2_p8', 'lv2_p8.png');
+    this.load.image('lv2_p9', 'lv2_p9.png');
+    this.load.image('lv2_p10', 'lv2_p10.png');
+    this.load.image('lv2_p11', 'lv2_p11.png');
+    this.load.image('lv2_p12', 'lv2_p12.png');
+    this.load.image('lv2_p13', 'lv2_p13.png');
+    this.load.image('lv2_p14', 'lv2_p14.png');
+    this.load.image('lv2_p15', 'lv2_p15.png');
+    this.load.image('lv2_p16', 'lv2_p16.png');
+    this.load.image('lv2_p17', 'lv2_p17.png');
+    this.load.image('lv2_p18', 'lv2_p18.png');
+    this.load.image('lv2_p19', 'lv2_p19.png');
+    this.load.image('lv2_p20', 'lv2_p20.png');
+    this.load.image('lv2_p21', 'lv2_p21.png');
+    this.load.image('lv2_p22', 'lv2_p22.png');
+    this.load.image('lv2_p23', 'lv2_p23.png');
+    this.load.image('lv2_p24', 'lv2_p24.png');
+
+    // Científico
+    this.load.spritesheet('cientifico_right', 'RightCientific.png', { frameWidth: 192, frameHeight: 192 });
+    this.load.spritesheet('cientifico_left', 'LeftCientific.png', { frameWidth: 192, frameHeight: 192 });
+    this.load.spritesheet('cientifico_attack', 'Attack_Left.png', { frameWidth: 192, frameHeight: 192 });
+    this.load.spritesheet('cientifico_death', 'Cientific_Die.png', { frameWidth: 192, frameHeight: 192 });
+    this.load.spritesheet('cientifico_bullet_sprite', 'Jeringa.png', { frameWidth: 192, frameHeight: 192 });
+
+    this.load.image('exit2', 'Portal Lv2.png');
+}
+
 
     create() {
         this.music = this.sound.add('Levels_Music', { loop: true, volume: 0.5 });
