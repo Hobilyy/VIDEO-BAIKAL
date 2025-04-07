@@ -10,46 +10,46 @@ export default class level3 extends Phaser.Scene {
     }
 
     preload() {
-        this.load.image('background3', '/Assets/backgrounds/Lv 3/BG_lv3_2.png');
+    this.load.image('background3', 'BG_lv3_2.png');
 
-        this.load.spritesheet('heart', '/Assets/ui/heart_hurt.png', { frameWidth: 16, frameHeight: 16 });
-        this.load.image('pause_normal', '/Assets/ui/pause_button/PauseNormal.png');
-        this.load.image('pause_hover', '/Assets/ui/pause_button/PauseHover.png');
-        this.load.image('pause_focus', '/Assets/ui/pause_button/PauseFocus.png');
-    
-        this.load.image('restart_normal', '/Assets/ui/replay_button/ReplayNormal.png');
-        this.load.image('restart_hover', '/Assets/ui/replay_button/ReplayHover.png');
-        this.load.image('restart_focus', '/Assets/ui/replay_button/ReplayFocus.png');
-    
-        this.load.image('menu_normal', '/Assets/ui/menu_button/MenuNormal.png');
-        this.load.image('menu_hover', '/Assets/ui/menu_button/MenuHover.png');
-        this.load.image('menu_focus', '/Assets/ui/menu_button/MenuFocus.png');
-    
-        this.load.image('exit_normal', '/Assets/ui/salir_button/LeaveNormal.png');
-        this.load.image('exit_hover', '/Assets/ui/salir_button/LeaveHover.png');
-        this.load.image('exit_focus', '/Assets/ui/salir_button/LeaveFocus.png');
+    this.load.spritesheet('heart', 'heart_hurt.png', { frameWidth: 16, frameHeight: 16 });
+    this.load.image('pause_normal', 'PauseNormal.png');
+    this.load.image('pause_hover', 'PauseHover.png');
+    this.load.image('pause_focus', 'PauseFocus.png');
 
-        //Plataformas
-        this.load.image('lv3_p1', '/Assets/backgrounds/Lv 3/plataformas/lv3_p1.png');
-        this.load.image('lv3_p2', '/Assets/backgrounds/Lv 3/plataformas/lv3_p2.png');
-        this.load.image('lv3_p3', '/Assets/backgrounds/Lv 3/plataformas/lv3_p3.png');
-        this.load.image('lv3_p4', '/Assets/backgrounds/Lv 3/plataformas/lv3_p4.png');
-        this.load.image('lv3_p5', '/Assets/backgrounds/Lv 3/plataformas/lv3_p5.png');
-        this.load.image('lv3_p6', '/Assets/backgrounds/Lv 3/plataformas/lv3_p6.png');
-        this.load.image('lv3_p7', '/Assets/backgrounds/Lv 3/plataformas/lv3_p7.png');
-        this.load.image('lv3_p8', '/Assets/backgrounds/Lv 3/plataformas/lv3_p8.png');
-        this.load.image('lv3_p9', '/Assets/backgrounds/Lv 3/plataformas/lv3_p9.png');
-        this.load.image('lv3_p10', '/Assets/backgrounds/Lv 3/plataformas/lv3_p10.png');
-        this.load.image('lv3_p11', '/Assets/backgrounds/Lv 3/plataformas/lv3_p11.png');
-        this.load.image('lv3_p12', '/Assets/backgrounds/Lv 3/plataformas/lv3_p12.png');
-        this.load.image('lv3_p13', '/Assets/backgrounds/Lv 3/plataformas/lv3_p13.png');
-        this.load.image('lv3_p14', '/Assets/backgrounds/Lv 3/plataformas/lv3_p14.png');
-        this.load.image('lv3_p15', '/Assets/backgrounds/Lv 3/plataformas/lv3_p15.png');
-        //this.load.image('lv3_p16', '/Assets/backgrounds/Lv 3/plataformas/lv3_p16.png');
-        
-        this.load.image('exit3', '/Assets/backgrounds/Portal Lv3.png');
-    }
+    this.load.image('restart_normal', 'ReplayNormal.png');
+    this.load.image('restart_hover', 'ReplayHover.png');
+    this.load.image('restart_focus', 'ReplayFocus.png');
 
+    this.load.image('menu_normal', 'MenuNormal.png');
+    this.load.image('menu_hover', 'MenuHover.png');
+    this.load.image('menu_focus', 'MenuFocus.png');
+
+    this.load.image('exit_normal', 'LeaveNormal.png');
+    this.load.image('exit_hover', 'LeaveHover.png');
+    this.load.image('exit_focus', 'LeaveFocus.png');
+
+    // Plataformas
+    this.load.image('lv3_p1', 'lv3_p1.png');
+    this.load.image('lv3_p2', 'lv3_p2.png');
+    this.load.image('lv3_p3', 'lv3_p3.png');
+    this.load.image('lv3_p4', 'lv3_p4.png');
+    this.load.image('lv3_p5', 'lv3_p5.png');
+    this.load.image('lv3_p6', 'lv3_p6.png');
+    this.load.image('lv3_p7', 'lv3_p7.png');
+    this.load.image('lv3_p8', 'lv3_p8.png');
+    this.load.image('lv3_p9', 'lv3_p9.png');
+    this.load.image('lv3_p10', 'lv3_p10.png');
+    this.load.image('lv3_p11', 'lv3_p11.png');
+    this.load.image('lv3_p12', 'lv3_p12.png');
+    this.load.image('lv3_p13', 'lv3_p13.png');
+    this.load.image('lv3_p14', 'lv3_p14.png');
+    this.load.image('lv3_p15', 'lv3_p15.png');
+    // this.load.image('lv3_p16', 'lv3_p16.png'); 
+
+    this.load.image('exit3', 'Portal Lv3.png');
+}
+    
     create() {
         this.music = this.sound.add('Levels_Music', { loop: true, volume: 0.5 });
         this.music.play();
