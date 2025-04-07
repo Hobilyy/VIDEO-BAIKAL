@@ -10,61 +10,61 @@ export default class level2 extends Phaser.Scene {
     }
 
     preload() {
-    this.load.image('background2', 'BG_lv2.png');
+    this.load.image('background2', './BG_lv2.png');
 
-    this.load.spritesheet('heart', 'heart_hurt.png', { frameWidth: 16, frameHeight: 16 });
-    this.load.image('pause_normal', 'PauseNormal.png');
-    this.load.image('pause_hover', 'PauseHover.png');
-    this.load.image('pause_focus', 'PauseFocus.png');
+    this.load.spritesheet('heart', './heart_hurt.png', { frameWidth: 16, frameHeight: 16 });
+    this.load.image('pause_normal', './PauseNormal.png');
+    this.load.image('pause_hover', './PauseHover.png');
+    this.load.image('pause_focus', './PauseFocus.png');
 
-    this.load.image('restart_normal', 'ReplayNormal.png');
-    this.load.image('restart_hover', 'ReplayHover.png');
-    this.load.image('restart_focus', 'ReplayFocus.png');
+    this.load.image('restart_normal', './ReplayNormal.png');
+    this.load.image('restart_hover', './ReplayHover.png');
+    this.load.image('restart_focus', './ReplayFocus.png');
 
-    this.load.image('menu_normal', 'MenuNormal.png');
-    this.load.image('menu_hover', 'MenuHover.png');
-    this.load.image('menu_focus', 'MenuFocus.png');
+    this.load.image('menu_normal', './MenuNormal.png');
+    this.load.image('menu_hover', './MenuHover.png');
+    this.load.image('menu_focus', './MenuFocus.png');
 
-    this.load.image('exit_normal', 'LeaveNormal.png');
-    this.load.image('exit_hover', 'LeaveHover.png');
-    this.load.image('exit_focus', 'LeaveFocus.png');
+    this.load.image('exit_normal', './LeaveNormal.png');
+    this.load.image('exit_hover', './LeaveHover.png');
+    this.load.image('exit_focus', './LeaveFocus.png');
 
     // Plataformas
-    this.load.image('lv2_p1', 'lv2_p1.png');
-    this.load.image('lv2_p2', 'lv2_p2.png');
-    this.load.image('lv2_p3', 'lv2_p3.png');
-    this.load.image('lv2_pl1', 'lv2_pl1.png');
-    this.load.image('lv2_p4', 'lv2_p4.png');
-    this.load.image('lv2_p5', 'lv2_p5.png');
-    this.load.image('lv2_pl2', 'lv2_pl2.png');
-    this.load.image('lv2_p6', 'lv2_p6.png');
-    this.load.image('lv2_p7', 'lv2_p7.png');
-    this.load.image('lv2_p8', 'lv2_p8.png');
-    this.load.image('lv2_p9', 'lv2_p9.png');
-    this.load.image('lv2_p10', 'lv2_p10.png');
-    this.load.image('lv2_p11', 'lv2_p11.png');
-    this.load.image('lv2_p12', 'lv2_p12.png');
-    this.load.image('lv2_p13', 'lv2_p13.png');
-    this.load.image('lv2_p14', 'lv2_p14.png');
-    this.load.image('lv2_p15', 'lv2_p15.png');
-    this.load.image('lv2_p16', 'lv2_p16.png');
-    this.load.image('lv2_p17', 'lv2_p17.png');
-    this.load.image('lv2_p18', 'lv2_p18.png');
-    this.load.image('lv2_p19', 'lv2_p19.png');
-    this.load.image('lv2_p20', 'lv2_p20.png');
-    this.load.image('lv2_p21', 'lv2_p21.png');
-    this.load.image('lv2_p22', 'lv2_p22.png');
-    this.load.image('lv2_p23', 'lv2_p23.png');
-    this.load.image('lv2_p24', 'lv2_p24.png');
+    this.load.image('lv2_p1', './lv2_p1.png');
+    this.load.image('lv2_p2', './lv2_p2.png');
+    this.load.image('lv2_p3', './lv2_p3.png');
+    this.load.image('lv2_pl1', './lv2_pl1.png');
+    this.load.image('lv2_p4', './lv2_p4.png');
+    this.load.image('lv2_p5', './lv2_p5.png');
+    this.load.image('lv2_pl2', './lv2_pl2.png');
+    this.load.image('lv2_p6', './lv2_p6.png');
+    this.load.image('lv2_p7', './lv2_p7.png');
+    this.load.image('lv2_p8', './lv2_p8.png');
+    this.load.image('lv2_p9', './lv2_p9.png');
+    this.load.image('lv2_p10', './lv2_p10.png');
+    this.load.image('lv2_p11', './lv2_p11.png');
+    this.load.image('lv2_p12', './lv2_p12.png');
+    this.load.image('lv2_p13', './lv2_p13.png');
+    this.load.image('lv2_p14', './lv2_p14.png');
+    this.load.image('lv2_p15', './lv2_p15.png');
+    this.load.image('lv2_p16', './lv2_p16.png');
+    this.load.image('lv2_p17', './lv2_p17.png');
+    this.load.image('lv2_p18', './lv2_p18.png');
+    this.load.image('lv2_p19', './lv2_p19.png');
+    this.load.image('lv2_p20', './lv2_p20.png');
+    this.load.image('lv2_p21', './lv2_p21.png');
+    this.load.image('lv2_p22', './lv2_p22.png');
+    this.load.image('lv2_p23', './lv2_p23.png');
+    this.load.image('lv2_p24', './lv2_p24.png');
 
     // Científico
-    this.load.spritesheet('cientifico_right', 'RightCientific.png', { frameWidth: 192, frameHeight: 192 });
-    this.load.spritesheet('cientifico_left', 'LeftCientific.png', { frameWidth: 192, frameHeight: 192 });
-    this.load.spritesheet('cientifico_attack', 'Attack_Left.png', { frameWidth: 192, frameHeight: 192 });
-    this.load.spritesheet('cientifico_death', 'Cientific_Die.png', { frameWidth: 192, frameHeight: 192 });
-    this.load.spritesheet('cientifico_bullet_sprite', 'Jeringa.png', { frameWidth: 192, frameHeight: 192 });
+    this.load.spritesheet('cientifico_right', './RightCientific.png', { frameWidth: 192, frameHeight: 192 });
+    this.load.spritesheet('cientifico_left', './LeftCientific.png', { frameWidth: 192, frameHeight: 192 });
+    this.load.spritesheet('cientifico_attack', './Attack_Left.png', { frameWidth: 192, frameHeight: 192 });
+    this.load.spritesheet('cientifico_death', './Cientific_Die.png', { frameWidth: 192, frameHeight: 192 });
+    this.load.spritesheet('cientifico_bullet_sprite', './Jeringa.png', { frameWidth: 192, frameHeight: 192 });
 
-    this.load.image('exit2', 'Portal Lv2.png');
+    this.load.image('exit2', './Portal Lv2.png');
 }
 
 
