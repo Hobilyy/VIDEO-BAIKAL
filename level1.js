@@ -63,8 +63,8 @@ export default class Level1 extends Phaser.Scene {
         this.load.image('lv1_pl2', './lv1_pl2.png');
 
         // Militar
-        this.load.spritesheet('mili_right', './Mili_Right.png', { frameWidth: 192, frameHeight: 192 });
-        this.load.spritesheet('mili_left', './Mili_left.png', { frameWidth: 192, frameHeight: 192 });
+        this.load.spritesheet('mili_right', 'Mili_Right.png', { frameWidth: 192, frameHeight: 192 });
+        this.load.spritesheet('mili_left', 'Mili_left.png', { frameWidth: 192, frameHeight: 192 });
         this.load.spritesheet('mili_idle', './Mili_idle.png', { frameWidth: 192, frameHeight: 192 });
         this.load.spritesheet('mili_attack', './Mili_ataque.png', { frameWidth: 192, frameHeight: 192 });
         this.load.spritesheet('mili_death', './Mili_oof.png', { frameWidth: 192, frameHeight: 192 });
