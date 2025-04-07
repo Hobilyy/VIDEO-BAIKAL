@@ -12,61 +12,62 @@ export default class Level1 extends Phaser.Scene {
     }
 
     preload() {
-        this.load.image('background1', '/Assets/backgrounds/Lv 1/Lv1_Big.png');
-        this.load.image('exit1', '/Assets/backgrounds/Lv 1/Portal/Portal Lv1.png');
-        
-        this.load.spritesheet('heart', '/Assets/ui/heart_hurt.png', { frameWidth: 16, frameHeight: 16 });
-        this.load.image('pause_normal', '/Assets/ui/pause_button/PauseNormal.png');
-        this.load.image('pause_hover', '/Assets/ui/pause_button/PauseHover.png');
-        this.load.image('pause_focus', '/Assets/ui/pause_button/PauseFocus.png');
-    
-        this.load.image('restart_normal', '/Assets/ui/replay_button/ReplayNormal.png');
-        this.load.image('restart_hover', '/Assets/ui/replay_button/ReplayHover.png');
-        this.load.image('restart_focus', '/Assets/ui/replay_button/ReplayFocus.png');
-    
-        this.load.image('menu_normal', '/Assets/ui/menu_button/MenuNormal.png');
-        this.load.image('menu_hover', '/Assets/ui/menu_button/MenuHover.png');
-        this.load.image('menu_focus', '/Assets/ui/menu_button/MenuFocus.png');
-    
-        this.load.image('exit_normal', '/Assets/ui/salir_button/LeaveNormal.png');
-        this.load.image('exit_hover', '/Assets/ui/salir_button/LeaveHover.png');
-        this.load.image('exit_focus', '/Assets/ui/salir_button/LeaveFocus.png');
-        //Plataformas
-        this.load.image('lv1_p1', '/Assets/backgrounds/Lv 1/Plataformas/lv1_p1.png');
-        this.load.image('lv1_p2', '/Assets/backgrounds/Lv 1/Plataformas/lv1_p2.png');
-        this.load.image('lv1_p3', '/Assets/backgrounds/Lv 1/Plataformas/lv1_p3.png');
-        this.load.image('lv1_p4', '/Assets/backgrounds/Lv 1/Plataformas/lv1_p4.png');
-        this.load.image('lv1_p5', '/Assets/backgrounds/Lv 1/Plataformas/lv1_p5.png');
-        this.load.image('lv1_p6', '/Assets/backgrounds/Lv 1/Plataformas/lv1_p6.png');
-        this.load.image('lv1_p7', '/Assets/backgrounds/Lv 1/Plataformas/lv1_p7.png');
-        this.load.image('lv1_p8', '/Assets/backgrounds/Lv 1/Plataformas/lv1_p8.png');
-        this.load.image('lv1_p9', '/Assets/backgrounds/Lv 1/Plataformas/lv1_p9.png');
-        this.load.image('lv1_p10', '/Assets/backgrounds/Lv 1/Plataformas/lv1_p10.png');
-        this.load.image('lv1_p11', '/Assets/backgrounds/Lv 1/Plataformas/lv1_p11.png');
-        this.load.image('lv1_p12', '/Assets/backgrounds/Lv 1/Plataformas/lv1_p12.png');
-        this.load.image('lv1_p13', '/Assets/backgrounds/Lv 1/Plataformas/lv1_p13.png');
-        this.load.image('lv1_p14', '/Assets/backgrounds/Lv 1/Plataformas/lv1_p14.png');
-        this.load.image('lv1_p15', '/Assets/backgrounds/Lv 1/Plataformas/lv1_p15.png');
-        this.load.image('lv1_p16', '/Assets/backgrounds/Lv 1/Plataformas/lv1_p16.png');
-        this.load.image('lv1_p17', '/Assets/backgrounds/Lv 1/Plataformas/lv1_p17.png');
-        this.load.image('lv1_p18', '/Assets/backgrounds/Lv 1/Plataformas/lv1_p18.png');
-        this.load.image('lv1_p19', '/Assets/backgrounds/Lv 1/Plataformas/lv1_p19.png');
-        this.load.image('lv1_p20', '/Assets/backgrounds/Lv 1/Plataformas/lv1_p20.png');
-        this.load.image('lv1_p21', '/Assets/backgrounds/Lv 1/Plataformas/lv1_p21.png');
-        this.load.image('lv1_p22', '/Assets/backgrounds/Lv 1/Plataformas/lv1_p22.png');
-        this.load.image('lv1_p23', '/Assets/backgrounds/Lv 1/Plataformas/lv1_p23.png');
-        this.load.image('lv1_p24', '/Assets/backgrounds/Lv 1/Plataformas/lv1_p24.png');
-        this.load.image('lv1_pl1', '/Assets/backgrounds/Lv 1/Plataformas/lv1_pl1.png');
-        this.load.image('lv1_pl2', '/Assets/backgrounds/Lv 1/Plataformas/lv1_pl2.png');
+    this.load.image('background1', 'Lv1_Big.png');
+    this.load.image('exit1', 'Portal Lv1.png');
 
-        // Cargar el sprite del militar
-        this.load.spritesheet('mili_right', '/Assets/sprites/Skin_Militar/Mili_right.png', { frameWidth: 192, frameHeight: 192 });
-        this.load.spritesheet('mili_left', '/Assets/sprites/Skin_Militar/Mili_Left.png', { frameWidth: 192, frameHeight: 192 });
-        this.load.spritesheet('mili_idle', '/Assets/sprites/Skin_Militar/Mili_idle.png', { frameWidth: 192, frameHeight: 192 });
-        this.load.spritesheet('mili_attack', '/Assets/sprites/Skin_Militar/Mili_ataque.png', { frameWidth: 192, frameHeight: 192 });
-        this.load.spritesheet('mili_death', '/Assets/sprites/Skin_Militar/Mili_oof.png', { frameWidth: 192, frameHeight: 192 });
-        this.load.spritesheet('mili_bullet_sprite', '/Assets/sprites/Skin_Militar/Mili_bullet.png', { frameWidth: 110, frameHeight: 110 });
-    }
+    this.load.spritesheet('heart', 'heart_hurt.png', { frameWidth: 16, frameHeight: 16 });
+    this.load.image('pause_normal', 'PauseNormal.png');
+    this.load.image('pause_hover', 'PauseHover.png');
+    this.load.image('pause_focus', 'PauseFocus.png');
+
+    this.load.image('restart_normal', 'ReplayNormal.png');
+    this.load.image('restart_hover', 'ReplayHover.png');
+    this.load.image('restart_focus', 'ReplayFocus.png');
+
+    this.load.image('menu_normal', 'MenuNormal.png');
+    this.load.image('menu_hover', 'MenuHover.png');
+    this.load.image('menu_focus', 'MenuFocus.png');
+
+    this.load.image('exit_normal', 'LeaveNormal.png');
+    this.load.image('exit_hover', 'LeaveHover.png');
+    this.load.image('exit_focus', 'LeaveFocus.png');
+
+    // Plataformas
+    this.load.image('lv1_p1', 'lv1_p1.png');
+    this.load.image('lv1_p2', 'lv1_p2.png');
+    this.load.image('lv1_p3', 'lv1_p3.png');
+    this.load.image('lv1_p4', 'lv1_p4.png');
+    this.load.image('lv1_p5', 'lv1_p5.png');
+    this.load.image('lv1_p6', 'lv1_p6.png');
+    this.load.image('lv1_p7', 'lv1_p7.png');
+    this.load.image('lv1_p8', 'lv1_p8.png');
+    this.load.image('lv1_p9', 'lv1_p9.png');
+    this.load.image('lv1_p10', 'lv1_p10.png');
+    this.load.image('lv1_p11', 'lv1_p11.png');
+    this.load.image('lv1_p12', 'lv1_p12.png');
+    this.load.image('lv1_p13', 'lv1_p13.png');
+    this.load.image('lv1_p14', 'lv1_p14.png');
+    this.load.image('lv1_p15', 'lv1_p15.png');
+    this.load.image('lv1_p16', 'lv1_p16.png');
+    this.load.image('lv1_p17', 'lv1_p17.png');
+    this.load.image('lv1_p18', 'lv1_p18.png');
+    this.load.image('lv1_p19', 'lv1_p19.png');
+    this.load.image('lv1_p20', 'lv1_p20.png');
+    this.load.image('lv1_p21', 'lv1_p21.png');
+    this.load.image('lv1_p22', 'lv1_p22.png');
+    this.load.image('lv1_p23', 'lv1_p23.png');
+    this.load.image('lv1_p24', 'lv1_p24.png');
+    this.load.image('lv1_pl1', 'lv1_pl1.png');
+    this.load.image('lv1_pl2', 'lv1_pl2.png');
+
+    // Militar
+    this.load.spritesheet('mili_right', 'Mili_right.png', { frameWidth: 192, frameHeight: 192 });
+    this.load.spritesheet('mili_left', 'Mili_Left.png', { frameWidth: 192, frameHeight: 192 });
+    this.load.spritesheet('mili_idle', 'Mili_idle.png', { frameWidth: 192, frameHeight: 192 });
+    this.load.spritesheet('mili_attack', 'Mili_ataque.png', { frameWidth: 192, frameHeight: 192 });
+    this.load.spritesheet('mili_death', 'Mili_oof.png', { frameWidth: 192, frameHeight: 192 });
+    this.load.spritesheet('mili_bullet_sprite', 'Mili_bullet.png', { frameWidth: 110, frameHeight: 110 });
+}
 
     create() {
         this.music = this.sound.add('Levels_Music', { loop: true, volume: 0.5 });
