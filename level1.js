@@ -22,7 +22,7 @@ export default class Level1 extends Phaser.Scene {
 
     this.load.image('restart_normal', './ReplayNormal.png');
     this.load.image('restart_hover', './ReplayHover.png');
-    this.load.image('restart_focus', ./'ReplayFocus.png');
+    this.load.image('restart_focus', './ReplayFocus.png');
 
     this.load.image('menu_normal', './MenuNormal.png');
     this.load.image('menu_hover', './MenuHover.png');
