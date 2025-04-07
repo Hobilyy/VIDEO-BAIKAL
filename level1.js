@@ -1,8 +1,8 @@
-import Player from 'player.js';
-import Enemies from 'enemies.js';
-import UI from 'ui.js';
-import Platforms from 'plataforms.js';
-import Scenes from 'scenes.js';
+import Player from './player.js';
+import Enemies from './enemies.js';
+import UI from './ui.js';
+import Platforms from './plataforms.js';
+import Scenes from './scenes.js';
 
 export default class Level1 extends Phaser.Scene {
     constructor() {
