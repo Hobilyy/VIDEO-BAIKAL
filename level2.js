@@ -10,7 +10,7 @@ export default class level2 extends Phaser.Scene {
     }
 
     preload() {
-        this.load.image('background2', '/Assets/backgrounds/Lv 2/BG_lv2.png');
+        this.load.image('background2', 'BG_lv2.png');
 
         this.load.spritesheet('heart', '/Assets/ui/heart_hurt.png', { frameWidth: 16, frameHeight: 16 });
         this.load.image('pause_normal', '/Assets/ui/pause_button/PauseNormal.png');
