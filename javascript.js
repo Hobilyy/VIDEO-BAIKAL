@@ -1,9 +1,9 @@
-import MainMenu from './mainmenu.js';
-import Level1 from './Levels/level1.js';
-import Level2 from './Levels/level2.js';
-import Level3 from './Levels/level3.js';
-import Scenes from './Levels//scenes.js';
-import Level3 from './Levels/level3.js';
+import MainMenu from 'mainmenu.js';
+import Level1 from 'level1.js';
+import Level2 from 'level2.js';
+import Level3 from 'level3.js';
+import Scenes from 'scenes.js';
+import Level3 from 'level3.js';
 
 // Definir la variable del juego fuera de la función para que esté disponible globalmente
 let game;
