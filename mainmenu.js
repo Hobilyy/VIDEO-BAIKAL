@@ -4,43 +4,46 @@ class MainMenu extends Phaser.Scene {
     }
 
     preload() {
-        this.load.audio('bgMusic', '/Assets/music/Cueva cute.ogg'); // Ruta del archivo de audio
+    this.load.audio('bgMusic', 'Cueva cute.ogg'); // Música de fondo del menú
 
-        // Cargar imágenes del botón "Play"
-       this.load.image('menu_background', '/Assets/backgrounds/fonda.jpg'); // Imagen de fondo del menú
+    // Fondo del menú
+    this.load.image('menu_background', 'fonda.jpg');
+    this.load.image('titulo', 'titulo.png');
 
-       this.load.image('titulo', '/Assets/ui/titulo.png');
+    // Botón Play
+    this.load.image('play_normal', 'PlayNormal.png');
+    this.load.image('play_focus', 'PlayFocus.png');
+    this.load.image('play_hover', 'PlayHover.png');
 
-       // Cargar las imágenes de los botones en cada estado
-       this.load.image('play_normal', '/Assets/ui/play_button/PlayNormal.png');
-       this.load.image('play_focus', '/Assets/ui/play_button/PlayFocus.png');
-       this.load.image('play_hover', '/Assets/ui/play_button/PlayHover.png');
+    // Música del juego
+    this.load.audio('Levels_Music', 'Cueva-misterio.ogg');
 
-       this.load.audio('Levels_Music', '/Assets/music/Cueva-misterio.ogg'); // Ruta del archivo de audio
+    // Sprites del jugador
+    this.load.spritesheet('player_jump', 'Baikal_Salto.png', { frameWidth: 192, frameHeight: 192 });
+    this.load.spritesheet('player_damage', 'Auch_Baikal.png', { frameWidth: 192, frameHeight: 192 });
+    this.load.spritesheet('player_death', 'Baikal_Die.png', { frameWidth: 192, frameHeight: 192 });
+    this.load.spritesheet('player_attack', 'ATAQUE_baikal.png', { frameWidth: 192, frameHeight: 192 });
+    this.load.spritesheet('player_defense', 'Defenza-Baikal.png', { frameWidth: 192, frameHeight: 192 });
+    this.load.spritesheet('player_right', 'RightBaikal.png', { frameWidth: 192, frameHeight: 192 });
+    this.load.spritesheet('player_left', 'LeftBaikal.png', { frameWidth: 192, frameHeight: 192 });
+    this.load.spritesheet('player_idle', 'Baikai_Quieta.png', { frameWidth: 192, frameHeight: 192 });
 
-        // Cargar el sprite del jugador
-        this.load.spritesheet('player_jump', '/Assets/sprites/Skin_Baikal/Baikal_Salto.png', { frameWidth: 192, frameHeight: 192 });
-        this.load.spritesheet('player_damage', '/Assets/sprites/Skin_Baikal/Auch_Baikal.png', { frameWidth: 192, frameHeight: 192 });
-        this.load.spritesheet('player_death', '/Assets/sprites/Skin_Baikal/Baikal_Die.png', { frameWidth: 192, frameHeight: 192 });
-        this.load.spritesheet('player_attack', '/Assets/sprites/Skin_Baikal/ATAQUE_baikal.png', { frameWidth: 192, frameHeight: 192 });
-        this.load.spritesheet('player_defense', '/Assets/sprites/Skin_Baikal/Defenza-Baikal.png', { frameWidth: 192, frameHeight: 192 });
-        this.load.spritesheet('player_right', '/Assets/sprites/Skin_Baikal/RightBaikal.png', { frameWidth: 192, frameHeight: 192 });
-        this.load.spritesheet('player_left', '/Assets/sprites/Skin_Baikal/LeftBaikal.png', { frameWidth: 192, frameHeight: 192 });
-        this.load.spritesheet('player_idle', '/Assets/sprites/Skin_Baikal/Baikai_Quieta.png', { frameWidth: 192, frameHeight: 192 });
+    // Vida del jugador
+    this.load.spritesheet('heart', 'heart_hurt.png', { frameWidth: 16, frameHeight: 16 });
 
-        //Vida del jugador
-        this.load.spritesheet('heart', '/Assets/ui/heart_hurt.png', { frameWidth: 16, frameHeight: 16 });
+    // Sonidos
+    this.load.audio('jumpSound', 'jump.ogg');
+    this.load.audio('walkSound', 'walk.ogg');
+    this.load.audio('mili_shoot', 'shot.ogg');
+    this.load.audio('cientifico_shoot', 'spin_geringa_1.ogg');
 
-        this.load.audio('jumpSound', '/Assets/sfx/jump.ogg');
-        this.load.audio('walkSound', '/Assets/sfx/walk.ogg');
-        this.load.audio('mili_shoot', '/Assets/sfx/shot.ogg');
-        this.load.audio('cientifico_shoot', '/Assets/sfx/spin_geringa_1.ogg'); 
-        this.load.spritesheet('background', '/Assets/backgrounds/Portada/Portada.png', {
-            frameWidth: 640,  // Ancho del frame
-            frameHeight: 380 // Ajustar al tamaño de la pantalla
-        });     
-         
-    }
+    // Portada animada
+    this.load.spritesheet('background', 'Portada.png', {
+        frameWidth: 640,
+        frameHeight: 380
+    });
+}
+
     
     create() {
         this.music = this.sound.add('bgMusic', { loop: true, volume: 0.5 });
